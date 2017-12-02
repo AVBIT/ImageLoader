@@ -3,7 +3,7 @@
     "description": "Test composer package ImageLoader. Downloading images from a remote host and saving them to the file system.",
     "type": "library",
     "license": "BEER-WARE",
-    "version": "1.0.0-beta1",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "Viacheslav Avramenko",
@@ -12,7 +12,7 @@
             "role": "Developer"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
         "php": "^7.1"
     },
