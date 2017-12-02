@@ -10,9 +10,7 @@ Downloading images from a remote host and saving them to the file system.
 
 
 #### Requires
-PHP-extensions:
-1. CURL
-2. EXIF
+PHP-extensions: CURL, EXIF
 
 #### Installation
 ```
@@ -28,9 +26,9 @@ $loader = new ImageLoader('/path/to/uploads_directory');
 // Optional.
 // Allowed types of uploaded images
 // Array of predefined PHP constants: http://php.net/manual/ru/image.constants.php
-// Defaults: [IMAGETYPE_GIF, IMAGETYPE_JPEG, IMAGETYPE_PNG]
+// Default: [IMAGETYPE_GIF, IMAGETYPE_JPEG, IMAGETYPE_PNG]
 // This can be changed by the method:
-$loader->setAllowedImageTypes([IMAGETYPE_GIF, IMAGETYPE_JPEG]); // denied IMAGETYPE_PNG
+// $loader->setAllowedImageTypes([IMAGETYPE_GIF, IMAGETYPE_JPEG, IMAGETYPE_JPEG2000, IMAGETYPE_PSD, IMAGETYPE_WEBP]);
 ```
 
 ```
@@ -43,8 +41,9 @@ $loader->setAllowedImageTypes([IMAGETYPE_GIF, IMAGETYPE_JPEG]); // denied IMAGET
 // curl.cainfo=/path/to/cacert.pem
 //
 // This can be changed by the method:
-$loader->setCurlCaCertPath('/path/to/cacert.pem');
+// $loader->setCurlCaCertPath('/path/to/cacert.pem');
 ```
+
 ```
 $urls = [
     'https://img.atbrovary.org/uploads/2017-10-25/11793orig.jpg',
@@ -56,6 +55,7 @@ $urls = [
 $response = $loader->loadImages($urls);
 print_r($response);
 ```
+
 Output:
 ```
 Array
