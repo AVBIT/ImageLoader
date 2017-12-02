@@ -258,8 +258,6 @@ class ImageLoader
 	/**
 	 * Creating a file with a random name for future upload
 	 *
-	 * @param string $filename (full path to the file)
-	 *
 	 * @return string (full path to the file)
 	 */
 	private function getRandomFileName()

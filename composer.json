@@ -14,7 +14,9 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": "^7.1"
+        "php": "^7.1",
+        "ext-curl": "^7.1",
+        "ext-exif": "^0.0.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^6.5"

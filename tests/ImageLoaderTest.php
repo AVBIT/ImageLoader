@@ -63,7 +63,7 @@ class ImageLoaderTest extends TestCase
 		];
 
 		$response = $my->loadImages($urls);
-        //print_r($response);
+        print_r($response); exit;
 
 		foreach ($response as $key => $value)
 		{
