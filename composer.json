@@ -1,6 +1,6 @@
 {
     "name": "avbit/imageloader",
-    "description": "Test composer package",
+    "description": "Test composer package ImageLoader. Downloading images from a remote host and saving them to the file system.",
     "type": "library",
     "license": "BEER-WARE",
     "version": "1.0.0-beta1",
@@ -15,6 +15,9 @@
     "minimum-stability": "stable",
     "require": {
         "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5"
     },
     "autoload": {
         "psr-4": {

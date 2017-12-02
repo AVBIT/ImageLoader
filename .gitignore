@@ -3,5 +3,4 @@
 /vendor/
 composer.lock
 
-
 /tests/phpunit.phar
