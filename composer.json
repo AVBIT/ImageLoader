@@ -1,0 +1,32 @@
+{
+    "name": "avbit/imageloader",
+    "description": "Test composer package",
+    "type": "library",
+    "license": "BEER-WARE",
+    "version": "1.0.0-beta1",
+    "authors": [
+        {
+            "name": "Viacheslav Avramenko",
+            "email": "avbitinfo@gmail.com",
+            "homepage": "http://example.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "AVBIT\\": "src"
+        }
+    },
+    "scripts": {
+        "clean": [
+            "cd tests && php clean.php"
+        ],
+        "mytest": [
+            "cd tests && php clean.php && php phpunit.phar ImageLoaderTest.php"
+        ]
+    }
+}
