@@ -1,38 +1,42 @@
 {
-    "name": "avbit/imageloader",
-    "description": "Test composer package ImageLoader. Downloading images from a remote host and saving them to the file system.",
-    "keywords": ["imageloader", "image", "loader"],
-    "type": "library",
-    "license": "BEER-WARE",
-    "version": "1.0.0",
-    "authors": [
-        {
-            "name": "Viacheslav Avramenko",
-            "email": "avbitinfo@gmail.com",
-            "homepage": "http://example.com",
-            "role": "Developer"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {
-        "php": "^7.1",
-        "ext-curl": "^7.1",
-        "ext-exif": "^0.0.0"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^6.5"
-    },
-    "autoload": {
-        "psr-4": {
-            "AVBIT\\": "src"
-        }
-    },
-    "scripts": {
-        "clean": [
-            "cd tests && php clean.php"
-        ],
-        "mytest": [
-            "cd tests && php clean.php && php phpunit.phar ImageLoaderTest.php"
-        ]
+  "name": "avbit/imageloader",
+  "description": "Test composer package ImageLoader. Downloading images from a remote host and saving them to the file system.",
+  "keywords": [
+    "imageloader",
+    "image",
+    "loader"
+  ],
+  "type": "library",
+  "license": "BEER-WARE",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Viacheslav Avramenko",
+      "email": "avbitinfo@gmail.com",
+      "homepage": "http://example.com",
+      "role": "Developer"
     }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": "^7.1",
+    "ext-curl": "^7.1",
+    "ext-exif": "^0.0.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "AVBIT\\": "src"
+    }
+  },
+  "scripts": {
+    "clean": [
+      "cd tests && php clean.php"
+    ],
+    "mytest": [
+      "cd tests && php clean.php && php phpunit.phar ImageLoaderTest.php"
+    ]
+  }
 }

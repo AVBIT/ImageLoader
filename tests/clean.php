@@ -9,20 +9,19 @@
  */
 
 
-
-echo PHP_EOL.'Recursive clean \'tests_upload\' directory...'.PHP_EOL.PHP_EOL;
+echo PHP_EOL . 'Recursive clean \'tests_upload\' directory...' . PHP_EOL . PHP_EOL;
 recursive_clean(__DIR__ . '/../tests_upload');
 
 
-
-function recursive_clean($dir) {
+function recursive_clean($dir)
+{
     //@array_map('unlink', glob("$dst/*.*")); // delete all files
     $files = new RecursiveIteratorIterator(
-        new RecursiveDirectoryIterator($dir, RecursiveDirectoryIterator::SKIP_DOTS),RecursiveIteratorIterator::CHILD_FIRST
+        new RecursiveDirectoryIterator($dir, RecursiveDirectoryIterator::SKIP_DOTS), RecursiveIteratorIterator::CHILD_FIRST
     );
     foreach ($files as $fileinfo) {
         $todo = ($fileinfo->isDir() ? 'rmdir' : 'unlink');
-        if ($fileinfo->getFilename() !== '.gitignore'){
+        if ($fileinfo->getFilename() !== '.gitignore') {
             @$todo($fileinfo->getRealPath());
         }
     }
